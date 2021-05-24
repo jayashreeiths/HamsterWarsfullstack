@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+/backend/hamster-wars-privatekey.json
 
 # testing
 /coverage
