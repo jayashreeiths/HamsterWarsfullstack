@@ -22,6 +22,7 @@ const Gallery = () => {
 			{ hamsters.map(hamster => (
 					<div key={hamster.id}>
 						Bild på produkt <br/>
+						<img src={`static/assets/${hamster.imgName}`} alt={hamster.imgName} />
 						{hamster.name} <br/>
 						
 					</div>
