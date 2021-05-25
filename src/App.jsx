@@ -5,6 +5,7 @@ import Gallery from './components/gallery/Gallery'
 import History from './components/history/History'
 import Statistics from './components/statistics/Statistics'
 import Home from './components/home/Home'
+import Upload from './components/gallery/Upload';
 function App() {
   return (
     <Router>
@@ -17,6 +18,7 @@ function App() {
         <NavLink to="/gallery"> Gallery </NavLink>
         <NavLink to="/stats"> Statistics </NavLink>
         <NavLink to="/history"> History</NavLink>
+        <NavLink to="/upload"> Upload</NavLink>
                 </nav>
             
       </header>
@@ -27,6 +29,7 @@ function App() {
                     <Route path="/gallery"> <Gallery /></Route>
                     <Route path="/stats"> <Statistics /></Route> 
                     <Route path="/history"> <History/></Route>
+                    <Route path="/upload"> <Upload/></Route>
                     <Route path="/"> <Home /></Route>
                 </Switch>
             </main>

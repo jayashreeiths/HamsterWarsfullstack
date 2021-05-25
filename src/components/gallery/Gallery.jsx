@@ -1,5 +1,6 @@
 import Hamsters from './Hamsters'
 import { useEffect, useState } from 'react'
+import Upload from './Upload'
 
 
 const Gallery = () => {
@@ -8,7 +9,7 @@ const Gallery = () => {
 
 	useEffect(() => {
 		async function get() {
-			const response = await fetch('/api/gallery', { method: 'GET' })
+			const response = await fetch('/api/hamsters', { method: 'GET' })
 			const data = await response.json()
 			// Använd "mountedRef" här
 			setHamsters(data)
@@ -20,14 +21,17 @@ const Gallery = () => {
 
 	return (
 		<div>
+			<h1 className ="upload" onClick>ADD YOUR HAMSTER</h1> 
+		<div className = "container-list">
 			{ hamsters.map(hamster => (
 
-        <Hamsters hamster={hamster} key={hamster.id}/>
+        <Hamsters hamster={hamster} key={hamster.id} />
 				
 			
 				))
               
             }
+		</div>
 		</div>
 	)
 }
