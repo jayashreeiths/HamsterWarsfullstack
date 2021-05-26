@@ -16,12 +16,12 @@
     background: lightpurple;
     padding: 1em;
     border-radius: 15px;
-    width: 100%;
+    width: 90%;
     height: 55vh;
 }
 
 .container-list div p {
-    margin-bottom: 0.3em;
+    margin-bottom: 0em;
     font-size: 2vh;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .list {
-    background: lightgreen;
+    background: #4BAF95;
     padding: 1em;
     border-radius: 15px;
     width: 100%;
@@ -55,5 +55,6 @@
 }
 
 .upload {
+    padding-right: 70px;
     float: right;
 }

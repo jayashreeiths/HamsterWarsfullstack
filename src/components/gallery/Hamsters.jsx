@@ -1,5 +1,16 @@
 import './Gallery.css' 
+import {  useState } from 'react'
 const Hamsters=({hamster})=>{
+	const [state, setState] = useState('')
+
+	async function deleteHamster(id) {
+		//const response = await fetch('/api/hamsters/:id', { method: 'DELETE' })
+		await fetch(`/api/hamsters/${id}`, { method: 'DELETE' })
+        .then(() => setState({ status: 'Delete successful' }));
+	   //setStatus('Delete successful');
+	}
+
+	
 	return (
 
    <div className="Gallery">
@@ -10,7 +21,7 @@ const Hamsters=({hamster})=>{
 
 
 
- <span role="img" className="delete"aria-label="cross">❌</span>
+ <span role="img" className="delete"aria-label="cross"onClick ={() =>deleteHamster(hamster.id)} >❌</span>
 
 
   <img src={`/assets/${hamster.imgName}`} alt={hamster.imgName} className="hamster-image"/>

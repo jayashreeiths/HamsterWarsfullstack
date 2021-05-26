@@ -1,7 +1,7 @@
 import Hamsters from './Hamsters'
 import { useEffect, useState } from 'react'
-import Upload from './Upload'
 
+    
 
 const Gallery = () => {
 	const [hamsters, setHamsters] = useState([])
@@ -21,7 +21,8 @@ const Gallery = () => {
 
 	return (
 		<div>
-			<h1 className ="upload" onClick>ADD YOUR HAMSTER</h1> 
+			
+			
 		<div className = "container-list">
 			{ hamsters.map(hamster => (
 
