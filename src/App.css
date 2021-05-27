@@ -1,6 +1,6 @@
 .App {
     text-align: center;
-    min-height: 100vh;
+    /* min-height: 100vh;*/
     display: flex;
     flex-direction: column;
 }
@@ -21,7 +21,7 @@
 }
 
 header {
-    background-color: #8AD2C0;
+    /* background-color: #8AD2C0;*/
     color: #3B4E49;
     padding: 0.5em;
     flex: 0 0 auto;
@@ -35,7 +35,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #4BAF95;
+    background-color: #F5C97A;
 }
 
 
@@ -47,9 +47,11 @@ nav a.active {
     font-weight: bold;
 }
 
-
-/*main {
-    background-color: #B5E5D9;
+main {
+    /*background-color: #B5E5D9;
     color: #3B4E49;
-    flex: 1 1 auto;
-}*/
+    flex: 1 1 auto;*/
+    overflow: auto;
+    background-image: url("../src/backgroundimage.png");
+    background-repeat: repeat-y;
+}

@@ -1,10 +1,11 @@
 import Hamsters from './Hamsters'
-import { useEffect, useState } from 'react'
+//import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
-    
 
-const Gallery = () => {
-	const [hamsters, setHamsters] = useState([])
+
+const Gallery = ({hamsterList}) => {
+	/*const [hamsters, setHamsters] = useState([])
     
 
 	useEffect(() => {
@@ -16,15 +17,17 @@ const Gallery = () => {
 			// OBS! Bättre att hämta datan i App-komponenten, eftersom den alltid är MOUNTED
 		}
 		get()
-	}, [])
+	}, [])*/
 
 
 	return (
-		<div>
-			
-			
+		<div className="Gallery" >
+			 <Link to='/Upload'>
+			 <h1 className ="upload">ADD YOUR HAMSTER</h1> 
+                </Link>
+	
 		<div className = "container-list">
-			{ hamsters.map(hamster => (
+			{ hamsterList.map(hamster => (
 
         <Hamsters hamster={hamster} key={hamster.id} />
 				
