@@ -29,7 +29,7 @@ const Gallery = ({hamsterList}) => {
 		<div className = "container-list">
 			{ hamsterList.map(hamster => (
 
-        <Hamsters hamster={hamster} key={hamster.id} />
+        <Hamsters hamster={hamster} key={hamster.id}  />
 				
 			
 				))

@@ -8,6 +8,7 @@ const Hamsters = ({ hamster }) => {
     await fetch(`/api/hamsters/${id}`, { method: "DELETE" }).then(() =>
       setState({ status: "Delete successful" })
     );
+    
 	alert("Hamster deleted succesfully")
   }
   function changeSelect() {

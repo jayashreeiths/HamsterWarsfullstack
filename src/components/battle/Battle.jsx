@@ -14,6 +14,8 @@ const Battle = () => {
     useEffect(() => {  
 
         try{
+
+            
         async function fetchData() {
             const response = await fetch('/api/hamsters/random', { method: 'GET' })
 			const data = await response.json()
@@ -48,7 +50,11 @@ const Battle = () => {
 		<div>
 			
         {showbattledata?
-			<Battledata hamster1 ={hamster1} hamster2 ={hamster2} /> :
+        <div>
+			<Battledata hamster1 ={hamster1} hamster2 ={hamster2} />
+           
+            </div>
+         :
 			<p>"no data"</p>
 		}
 

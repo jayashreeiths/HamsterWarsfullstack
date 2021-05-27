@@ -41,7 +41,7 @@ function App() {
                 <Switch>
                     
                     <Route path="/battle"> <Battle /></Route>
-                    <Route path="/gallery"> <Gallery hamsterList={hamsters}/></Route>
+                    <Route path="/gallery"> <Gallery hamsterList={hamsters} /></Route>
                     <Route path="/stats"> <Statistics /></Route> 
                     <Route path="/history"> <History/></Route>
                     <Route path="/upload"> <Upload/></Route>
