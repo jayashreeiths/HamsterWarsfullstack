@@ -51,6 +51,8 @@ main {
     /*background-color: #B5E5D9;
     color: #3B4E49;
     flex: 1 1 auto;*/
+    width: 100%;
+    height: 100%;
     overflow: auto;
     background-image: url("../src/backgroundimage.png");
     background-repeat: repeat-y;

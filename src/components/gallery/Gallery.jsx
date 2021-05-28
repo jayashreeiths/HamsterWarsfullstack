@@ -22,10 +22,11 @@ const Gallery = ({hamsterList}) => {
 
 	return (
 		<div className="Gallery" >
+			<div className ="galleryButton">
 			 <Link to='/Upload'>
-			 <button className ="upload">ADD YOUR HAMSTER</button> 
+			 <p>ADD YOUR HAMSTER</p> 
                 </Link>
-	
+				</div>
 		<div className = "container-list">
 			{ hamsterList.map(hamster => (
 

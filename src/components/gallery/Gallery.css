@@ -60,10 +60,11 @@
     cursor: pointer;
 }
 
-.upload {
+
+/*.upload {
     float: right;
     padding-right: 70px;
-}
+}*/
 
 li {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -78,4 +79,20 @@ li {
     color: rgb(20, 20, 20);
     font-size: 1.2em;
     margin: 1em 0 0.5em;
+}
+
+.galleryButton {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    float: left;
+    /*position: relative;*/
+    /*left: 0;
+    right: 0;
+    margin: 1em auto 1em auto;*/
+    /*margin-left: 30em;
+    margin-right: 100px;*/
+    color: #D62400;
+    /*height: 5em;*/
+    width: 12em;
+    align-self: center;
 }

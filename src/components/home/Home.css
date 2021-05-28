@@ -1,0 +1,28 @@
+/*.wrapper {
+    margin: 10% 10em 9%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-bottom: auto;
+}*/
+
+.hamster-icon {
+    left: 75%;
+    width: 15vw;
+    width: 20vw;
+    top: 5vh;
+    border-radius: 175px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #f07e0e;
+    padding: 5px;
+}
+
+.home-container {
+    height: 100vh;
+    width: 100%;
+    top: 5vh;
+}
+
+.home-container p {
+    font-size: 1em;
+}

@@ -52,7 +52,9 @@ async function postMatch(winnerId, loserId) {
 	
 
     return(
+		<main>
 		<section className="wrapper">
+
          <p className= "vote">Vote for the cutest hamster</p>
 		<section className="random">
 			
@@ -68,6 +70,7 @@ async function postMatch(winnerId, loserId) {
 					<p>Wins: {hamster1.wins}</p>
 	<p>Losses: {hamster1.defeats}</p>*/}
             </div>
+
 		  <h1>VS</h1>
 		<div onClick={() => hamsterVote(hamster2, hamster1)}>
 		<p><span>{hamster2.name}</span></p>
@@ -82,17 +85,21 @@ async function postMatch(winnerId, loserId) {
 
         </div>
 		
+		
             {
                 winningHamster && showPopUp
                     ? <Battleresult winner={winningHamster} loser={losingHamster} />
                     : ""
             }
+			
+		  </section>
+		  <div className="buttonwrapper">
 		<Link to='/Battle'>
-			 <button className ="battleButton">ADD YOUR HAMSTER</button> 
+			 <p >Next Battle</p> 
                 </Link>
+				</div>
 		  </section>
-		  </section>
-          
+          </main>
     )
 
 
