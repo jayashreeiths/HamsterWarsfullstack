@@ -23,7 +23,7 @@ const Gallery = ({hamsterList}) => {
 	return (
 		<div className="Gallery" >
 			 <Link to='/Upload'>
-			 <h1 className ="upload">ADD YOUR HAMSTER</h1> 
+			 <button className ="upload">ADD YOUR HAMSTER</button> 
                 </Link>
 	
 		<div className = "container-list">
