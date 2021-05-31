@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Battleresult from './Battleresult'
 import {  useState } from 'react'
 
-const Battledata =({hamster1,hamster2}) =>{
+const Battledata =({hamster1,hamster2,fetchData}) =>{
 	const [winningHamster, setWinningHamster] = useState("");
     const [losingHamster, setLosingHamster] = useState("");
 	const [showPopUp, setShowPopUp] = useState(false);
@@ -47,7 +47,7 @@ async function postMatch(winnerId, loserId) {
 	}
 	function popUp() {
         setShowPopUp(true);
-        setTimeout(setShowPopUp, 7000);
+        setTimeout(setShowPopUp, 8000);
     }
 	
 
@@ -95,7 +95,7 @@ async function postMatch(winnerId, loserId) {
 		  </section>
 		  <div className="buttonwrapper">
 		<Link to='/Battle'>
-			 <p >Next Battle</p> 
+			 <p onClick={()=>fetchData()}>Next Battle</p> 
                 </Link>
 				</div>
 		  </section>
