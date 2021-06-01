@@ -47,7 +47,7 @@ async function postMatch(winnerId, loserId) {
 	}
 	function popUp() {
         setShowPopUp(true);
-        setTimeout(setShowPopUp, 8000);
+        //setTimeout(setShowPopUp, 8000);
     }
 	
 
@@ -95,7 +95,7 @@ async function postMatch(winnerId, loserId) {
 		  </section>
 		  <div className="buttonwrapper">
 		<Link to='/Battle'>
-			 <p onClick={()=>fetchData()}>Next Battle</p> 
+			 <p onClick={()=>{fetchData();  setShowPopUp(false)	}} >Next Battle</p> 
                 </Link>
 				</div>
 		  </section>
