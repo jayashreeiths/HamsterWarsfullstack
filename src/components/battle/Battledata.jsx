@@ -47,7 +47,7 @@ async function postMatch(winnerId, loserId) {
 	}
 	function popUp() {
         setShowPopUp(true);
-        //setTimeout(setShowPopUp, 8000);
+    setTimeout(setShowPopUp, 8000);
     }
 	
 
