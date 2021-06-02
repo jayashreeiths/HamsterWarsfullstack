@@ -96,7 +96,7 @@ async function postMatch(winnerId, loserId) {
 		  <div className="buttonwrapper">
 			  <nav>
 		<Link to='/Battle'>
-			 <p onClick={()=>{fetchData();  setShowPopUp(false)	}} >Next Battle</p> 
+			 <p  onClick={()=>{fetchData();  setShowPopUp(false)	}} >Next Battle</p> 
                 </Link>
 				</nav>
 				</div>

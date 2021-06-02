@@ -1,14 +1,13 @@
 import "./Gallery.css";
 import { useState } from "react";
 const Hamsters = ({ hamster }) => {
-  const [state, setState] = useState("");
+ 
   const [selectedItem, setSelectedItem] = useState("");
   const [winnerhamsters, setWinnerHamsters] = useState([])
   const [message,setMessage]=useState("")
   async function deleteHamster(id) {
-    await fetch(`/api/hamsters/${id}`, { method: "DELETE" }).then(() =>
-      setState({ status: "Delete successful" })
-    );
+    await fetch(`/api/hamsters/${id}`, { method: "DELETE" })
+ 
     
 	alert("Hamster deleted succesfully")
   }

@@ -1,0 +1,30 @@
+.history-wrapper {
+    margin: 9% 3em 15%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px
+}
+
+.history-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    border: .25px solid rgb(255, 255, 255);
+    background-color: #A8682F;
+    padding: 5px;
+}
+
+.VSclass {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.deleteMatch {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+}
