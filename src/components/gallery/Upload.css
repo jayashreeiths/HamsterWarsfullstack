@@ -1,15 +1,28 @@
+.formWrapper {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
 .Form {
     display: flex;
     flex-direction: column;
     width: 30%;
+    height: 80vh;
     font-family: 'Indie Flower', cursive;
     font-size: 1em;
     border-radius: 2%;
+    border: 2px solid #A8682F;
     background-color: white;
     color: black;
-    padding: 5em;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding: 2em;
     text-align: center;
     margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: none;
 }
 
 .Form button {

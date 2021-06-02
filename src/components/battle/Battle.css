@@ -1,3 +1,7 @@
+.wrapper {
+    height: 100vh;
+}
+
 .random {
     margin: 5% 10em 9%;
     display: grid;
@@ -35,13 +39,14 @@ span {
     font-size: 1.2em;
 }
 
-.vote {
+
+/*.vote {
     font-family: cursive;
     color: #111111;
     font-weight: 700;
     font-size: 1.2em;
     margin-top: 30px;
-}
+}*/
 
 .buttonwrapper {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -54,7 +59,7 @@ span {
     margin-right: 100px;*/
     color: #D62400;
     /*height: 5em;*/
-    width: 12em;
+    width: 7em;
     align-self: center;
     border-radius: 2.5em;
     border: 1px solid rgb(0, 0, 0);
@@ -62,6 +67,25 @@ span {
     background-color: #f07e0e;
 }
 
-Link {
+nav a {
+    padding: 0.2em 1em;
+    color: #3B4E49;
+    transition: background-color 0.3s linear;
     text-decoration: none;
+}
+
+nav a.active {
+    font-weight: bold;
+}
+
+.glove1 {
+    transform: rotate(90deg);
+}
+
+.glove2 {
+    transform: rotate(270deg)
+}
+
+.buttonwrapper p {
+    margin: 0px;
 }

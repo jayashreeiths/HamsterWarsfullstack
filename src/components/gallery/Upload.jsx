@@ -78,10 +78,10 @@ const Upload = () => {
     }
 
     return (
-        <div>
+        <div className = ".formWrapper">
             <main className="Form">
                 <form onSubmit={e => { e.preventDefault(); }}>
-					
+					<label>Add your hamster</label><br/><br/>
                     <label>Name</label>
                     <input value={name} type="text" onChange={e => setName(e.target.value)} placeholder="Enter name"   onBlur={() => setNameTouched(true)}
                     className={nameClass}></input>
