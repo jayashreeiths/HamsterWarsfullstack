@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Hamsters from "../gallery/Hamsters";
+
 import './History.css'
 
 const History = ({hamsters}) => {
@@ -62,18 +62,18 @@ const History = ({hamsters}) => {
 
  
   return (
-   
+
       <section>
-        <h1>Latest Matches</h1>
+        <h1 className="latestMatches">LATEST MATCHES</h1>
 		<div className="history-wrapper">
-			<div>
+			<div className="winner">
         <h1>WINNER</h1>
         <ul className= "historyUl">
 
 
 		      {winnersInfo.map((match) => {
             return (
-              <li key={match.id}>
+              <li className="hamname" key={match.id}>
                
                {match.name} 
 				<img
@@ -89,11 +89,11 @@ const History = ({hamsters}) => {
 		  }
         </ul>
 		</div>
-    <div className ="VSclass"><h1>VS</h1></div>
 
 
 
-		<div>
+
+		<div className="losers">
     <h1>LOSER</h1>
 		<ul className="historyUl" >
 {losersInfo.map((match) => {
@@ -120,10 +120,10 @@ return (
 
 		      {latestmatches.map((match) => {
             return (
-              <li key={match.id}>
+              <li key={match.id} className="lidelete">
              
              
-               <span onClick={() => deleteMatch(match.id)}>❌</span>
+               <span className="deleteCross" onClick={() => deleteMatch(match.id)}>❌</span>
 	  
               </li>
             );

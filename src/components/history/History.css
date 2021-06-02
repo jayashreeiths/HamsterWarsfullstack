@@ -1,8 +1,11 @@
 .history-wrapper {
-    margin: 9% 3em 15%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 50px
+    display: flex;
+    /*justify-content: space-between;*/
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    margin-top: -40px;
 }
 
 .history-image {
@@ -12,6 +15,7 @@
     border: .25px solid rgb(255, 255, 255);
     background-color: #A8682F;
     padding: 5px;
+    margin: auto;
 }
 
 .VSclass {
@@ -27,4 +31,33 @@
     margin: auto;
     justify-content: center;
     align-content: center;
+    margin-top: 30px;
+}
+
+.historyUl {
+    display: grid;
+    grid-template-columns: 2fr;
+}
+
+.lidelete {
+    margin-top: 37px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+li.hamname {
+    align-items: center;
+    font-family: Margarine;
+}
+
+.latestMatches {
+    margin-top: 50px;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.historyUl li {
+    border-bottom: 5px solid #f07e0e;
 }

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import './statistics.css'
+import './Statistics.css'
 const Statistics = () => {
   const [winners, setWinners] = useState([])  
   const [losers, setLosers] = useState([])  
