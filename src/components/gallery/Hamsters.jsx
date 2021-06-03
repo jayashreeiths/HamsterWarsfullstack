@@ -24,7 +24,7 @@ const Hamsters = ({ hamster,hamsterList }) => {
       setWinnerHamsters(data);
       console.log(winnerhamsters);
     } catch {
-      console.log("Hamster has not won any matches yet..");
+     // console.log("Hamster has not won any matches yet..");
       setMessage("Hamster has not won any match yet");
     }
     const tempLoserId = [];
@@ -57,11 +57,7 @@ setLoserinfo(hamsterList.filter((hamster) => tempLoserId.includes(hamster.id)));
         <li>
           wins: {hamster.wins} games {hamster.games} defeats {hamster.defeats}
         </li>
-        <li>
-          
-          Defetaers
-          {winnerhamsters.map((hamster) => "\n id:" + hamster.id)}
-        </li>
+     
         <li>
           
           Defetaers
