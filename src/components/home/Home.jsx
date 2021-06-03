@@ -1,5 +1,5 @@
 import './Home.css'
-
+import { Link } from "react-router-dom";
 const Home = () => (
 
 
@@ -21,8 +21,12 @@ const Home = () => (
       <p>In each battle, you choose the cutest hamster</p>
       <p>In gallery you view your hamsters and you can also add and delete hamsters</p>
       
-      <a href="/Battle" className="link-to">Go to battle</a>
-    </div>
+      <Link to="/Battle">
+          <h2 className="Battle">Go to Battle</h2>
+        </Link>
+
+       
+        </div>
   </main>
   </div>
     
