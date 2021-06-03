@@ -66,8 +66,9 @@ const History = ({hamsters}) => {
       <section>
         <h1 className="latestMatches">LATEST MATCHES</h1>
 		<div className="history-wrapper">
-			<div className="winner">
-        <h1>WINNER</h1>
+   
+			<div className="winner item" >
+      <h2>WINNER</h2>
         <ul className= "historyUl">
 
 
@@ -75,7 +76,7 @@ const History = ({hamsters}) => {
             return (
               <li className="hamname" key={match.id}>
                
-               {match.name} 
+               {match.name} <br/>
 				<img
         src={`/assets/${match.imgName}`}
         alt={match.name}
@@ -90,17 +91,18 @@ const History = ({hamsters}) => {
         </ul>
 		</div>
 
+<div className="VSclass"><h1>VS</h1></div>
 
 
-
-		<div className="losers">
-    <h1>LOSER</h1>
+		<div className="loser item">
+    <h2>LOSER</h2>
 		<ul className="historyUl" >
 {losersInfo.map((match) => {
 return (
 <li key={match.id}>
 
 {match.name} 
+<br/>
   <img
         src={`/assets/${match.imgName}`}
         alt={match.name}
@@ -114,7 +116,10 @@ return (
 }
 </ul>
 </div>
-<div>
+<div className="item deleteCross">
+  <br/>
+  <br/>
+  <br/>
 <ul >
 
 
@@ -123,7 +128,8 @@ return (
               <li key={match.id} className="lidelete">
              
              
-               <span className="deleteCross" onClick={() => deleteMatch(match.id)}>❌</span>
+               <span onClick={() => deleteMatch(match.id)}>❌</span>
+              
 	  
               </li>
             );

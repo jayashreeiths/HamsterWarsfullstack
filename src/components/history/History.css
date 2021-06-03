@@ -1,11 +1,29 @@
-.history-wrapper {
+/*.history-wrapper {
     display: flex;
-    /*justify-content: space-between;*/
+    /*justify-content: space-between;
     justify-content: space-evenly;
     width: 100%;
     height: 100vh;
     align-items: center;
     margin-top: -40px;
+}*/
+
+.history-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 1fr;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.item {
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    border: red
+}
+
+.item h2 {
+    font-size: 25px;
 }
 
 .history-image {
@@ -18,15 +36,30 @@
     margin: auto;
 }
 
+.lidelete {
+    /*margin-top: 40px;
+    margin-bottom: 25px;*/
+    margin-left: 20px;
+    height: 120px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.deleteCross {
+    align-items: start;
+}
+
 .VSclass {
     display: flex;
     margin: auto;
     justify-content: center;
     align-content: center;
     text-align: center;
+    font-size: 50px;
 }
 
-.deleteMatch {
+
+/*.deleteMatch {
     display: flex;
     margin: auto;
     justify-content: center;
@@ -45,10 +78,7 @@
     margin-left: 20px;
 }
 
-li.hamname {
-    align-items: center;
-    font-family: Margarine;
-}
+
 
 .latestMatches {
     margin-top: 50px;
@@ -60,4 +90,4 @@ li.hamname {
 
 .historyUl li {
     border-bottom: 5px solid #f07e0e;
-}
+}*/
