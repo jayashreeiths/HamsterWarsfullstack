@@ -25,7 +25,7 @@ const History = ({ hamsters }) => {
     const winnerId = match.winnerId;
     tempWinnerId.push(winnerId);
   });
-  console.log("tempWinnerrID", tempWinnerId);
+  //console.log("tempWinnerrID", tempWinnerId);
 
   let winnersInfo = [];
 
@@ -37,7 +37,7 @@ const History = ({ hamsters }) => {
     const loserId = match.loserId;
     tempLoserId.push(loserId);
   });
-  console.log("temLoserId", tempLoserId);
+  //console.log("temLoserId", tempLoserId);
 
   let losersInfo = [];
 

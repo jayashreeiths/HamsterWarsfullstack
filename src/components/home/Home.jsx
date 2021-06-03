@@ -24,7 +24,9 @@ const Home = () => (
       <Link to="/Battle">
           <h2 className="Battle">Go to Battle</h2>
         </Link>
-
+        <Link to="/Gallery">
+          <h2 className="Gallery">Go to Gallery</h2>
+        </Link>
        
         </div>
   </main>

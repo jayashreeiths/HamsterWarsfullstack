@@ -1,11 +1,12 @@
 import "./Gallery.css";
 import { useState } from "react";
 
-const Hamsters = ({ hamster }) => {
+const Hamsters = ({ hamster,hamsterList }) => {
   const [selectedItem, setSelectedItem] = useState("");
   const [winnerhamsters, setWinnerHamsters] = useState([]);
   const [message, setMessage] = useState("");
   const [hamsterDeleted, setHamsterDeleted] = useState("");
+  const[loserinfo,setLoserinfo] =useState([])
 
   async function deleteHamster(id) {
     await fetch(`/api/hamsters/${id}`, { method: "DELETE" });
@@ -26,6 +27,16 @@ const Hamsters = ({ hamster }) => {
       console.log("Hamster has not won any matches yet..");
       setMessage("Hamster has not won any match yet");
     }
+    const tempLoserId = [];
+
+    winnerhamsters.forEach((match) => {
+    const loserId = match.loserId;
+    tempLoserId.push(loserId);
+  });
+  console.log("temLoserId", tempLoserId);
+
+ 
+setLoserinfo(hamsterList.filter((hamster) => tempLoserId.includes(hamster.id)));
   }
 
   function changeSelect() {
@@ -47,9 +58,14 @@ const Hamsters = ({ hamster }) => {
           wins: {hamster.wins} games {hamster.games} defeats {hamster.defeats}
         </li>
         <li>
-          {" "}
-          Defetaers{" "}
-          {winnerhamsters.map((hamster) => "\n Id:" + hamster.loserId)}
+          
+          Defetaers
+          {winnerhamsters.map((hamster) => "\n id:" + hamster.id)}
+        </li>
+        <li>
+          
+          Defetaers
+          {loserinfo.map((hamster) => "\n name:" + hamster.name)}
         </li>
 
         <li>{message}</li>
